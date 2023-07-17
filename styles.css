@@ -64,15 +64,6 @@ body {
   color: white;
 }
 
-.kickoff {
-  color: #222;  /* change color when hover over the link */
-  font-size: 36px;
-}
-
-.kickoff :hover {
-  color: #222;  
-
-}
 
 /* Footer */
 footer {
@@ -105,6 +96,30 @@ margin: 5px;
 
 .social-icon:hover {
   color: #222;  
+}
+
+/* Meet the team */
+.container {
+  text-align: center;
+  background-color: antiquewhite;
+  border: none; 
+
+}
+.row{
+  display: flex;
+  justify-content: center;  /* horizontally centers the contents (the text within) */
+  align-items: center; /* vertically centers the contents (the text within) */
+}
+
+#meet-the-teams {
+  padding: 5px;
+  font-size: 35px;
+
+}
+#meet-the-teams img {
+  width: 150px;  
+  height: 150px;
+  margin: 35px;
 }
 
 /* Page - Table */
@@ -156,21 +171,3 @@ table .col{
 	color: #000000;
 }
 
-/* Meet the team */
-.container {
-  text-align: center;
-  background-color: antiquewhite;
-
-}
-.row{
-  display: flex;
-  justify-content: center;  /* horizontally centers the contents (the text within) */
-  align-items: center; /* vertically centers the contents (the text within) */
-}
-
-#meet-the-teams img{
-  width: 250px;  
-  height: 250px;
-  margin: 75px;
-
-}
