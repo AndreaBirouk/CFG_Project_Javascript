@@ -64,6 +64,11 @@ body {
   color: white;
 }
 
+#bg-text{
+margin: 50px;
+line-height: 25px;
+}
+
 
 /* Footer */
 footer {
@@ -113,7 +118,7 @@ margin: 5px;
 
 #meet-the-teams {
   padding: 5px;
-  font-size: 35px;
+  font-size: 25px;
 
 }
 #meet-the-teams img {
@@ -125,49 +130,65 @@ margin: 5px;
 /* Page - Table */
 
 
-.ptable table{
-	margin: 30px auto;
-	border-collapse: collapse;
+input[type=text], select, textarea {
+  width: 175px; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+justify-content: center;
+
 }
 
-.ptable{
-	margin: 0px 0% 30px 0%;
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-th, td {
-    padding: 10px;
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
 }
+
+/* Add a background color and some padding around the form */
+.standings_container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+td {
+  text-align: center;
+  line-height: 75px;
+  font-weight: bold;
+  font-size: 25px;
+  }
 
 th{
-	background-color: black;
-	color: #cdccc7;
+
+font-size: 25px;
+background-color: #222;
+color: #ccc;
+
 }
 
-.heading{
-	text-align: center;
-	text-decoration: none;
-	color: black;
-	margin: 30px;
-	display: block;
+.scores{
+font-size: 35px;
+background-color: #222;
+color: #ccc;
+padding: 20px;
 }
 
-.wpos{
-	text-align: center;
+tr:nth-child(odd) {
+  background-color: rgb(230, 234, 234);
 }
-
-.wpos td{
-	color: black;
+tr:nth-child(even) {
+  background-color: white;
 }
-
-table .col{
-	border-bottom: 1px solid #eae4e4;
-}
-
-.wpos:hover{
-	background-color: #60c944f5;
-}
-
-.wpos:hover td{
-	color: #000000;
-}
-
