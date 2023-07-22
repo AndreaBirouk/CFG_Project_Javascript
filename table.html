@@ -60,117 +60,68 @@
     </div>
   </div>
 </div>
+
    
   <!-- ==== END photo grid ==== -->
 
   <!-- ==== Standings ==== -->
-  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet"> 
-
-<div class="ptable">
-  <h1 class="heading">Standings</h1>
-					<table>
-						<tr class="col">
-							<th>#</th>
-							<th>Team</th>
-							<th>GP</th>
-							<th>W</th>
-							<th>D</th>
-							<th>L</th>
-							<th>GD</th>
-							<th>PTS</th>
-						</tr>
-
-						<tr class="wpos">
-							<td>1</td>
-							<td>Arsenal</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-						</tr>
-						
-        
-          <tr class="wpos">
-            <td>2</td>
-            <td>Chelsea</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-          </tr>
-
+  <h1 class="scores"> Add scores </h1>
+  <div class="standings_container">
+    <form >
+  
+      <label for="homeTeam">Home Team</label>
+      <select id="hTeam">
+        <option value = "Arsenal">Arsenal</option>
+        <option value = "Chelsea">Chelsea</option>
+        <option value = "Crystal Palace">Crystal Palace</option>
+        <option value = "Everton">Everton</option>
+        <option value = "Manchester City">Manchester City</option>
+        <option value = "Manchester United">Manchester United</option>
+        <option value = "Tottenham Hotspur">Tottenham Hotspur</option>
+        <option value = "West Ham United">West Ham United</option>
+      </select>
       
-        <tr class="wpos">
-          <td>3</td>
-          <td>Manchester City</td>
-          <td>0</td>
-          <td>0</td>
-          <td>0</td>
-          <td>0</td>
-          <td>0</td>
-          <td>0</td>
-        </tr>
+      <label for ="hgoals">Goals</label>
+      <input type = "number" placeholder = "0" id="hgoals"></input> 
+      
+      <br/><br/>
 
+      <label for="awayTeam">Away Team</label>
+      <select id="aTeam">
+        <option value = "Arsenal">Arsenal</option>
+        <option value = "Chelsea">Chelsea</option>
+        <option value = "Crystal Palace">Crystal Palace</option>
+        <option value = "Everton">Everton</option>
+        <option value = "Manchester City">Manchester City</option>
+        <option value = "Manchester United">Manchester United</option>
+        <option value = "Tottenham Hotspur">Tottenham Hotspur</option>
+        <option value = "West Ham United">West Ham United</option>
+      </select>
+  
+      <label for="agoals">Goals</label>
+      <input type = "number" placeholder="0" id="agoals"></input>
 
-      <tr class="wpos">
-        <td>4</td>
-        <td>Tottenham Hotspur</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-      </tr>
-
-    <tr class="wpos">
-      <td>5</td>
-      <td>Westham United</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-
+      <br/><br/>
+  
+      <input type="submit" value="Submit" id="submitBtn">
+    </form>
+    </div>
+    <table style="width:100%"  id = "myTable">
+    <thead>
+    <tr>
+      <th>Team</th>
+      <th>Pts</th>
+      <th>W</th>
+      <th>D</th>
+      <th>L</th>
+      <th>GD</th>
     </tr>
-    <tr class="wpos">
-      <td>6</td>
-      <td>Everton</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-   
-  <tr class="wpos">
-    <td>7</td>
-    <td>Crystal Palace</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-  </tr>
-
-  <tr class="wpos">
-    <td>8</td>
-    <td>Manchester United</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-  </tr>
-</table>
+    <tbody> 
+    </tbody>  
+    </thead>  
+  </table>
+  
+  <script src="index.js"></script>
 <!-- ==== END of standins ==== -->
 </div>
 </main>
