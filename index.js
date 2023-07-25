@@ -1,13 +1,27 @@
+//Stop the user selecting the same drop-down options
+let dropdown_1 = document.getElementById("hTeam");
+let dropdown_2 = document.getElementById("aTeam");
+
+dropdown_1.addEventListener("change", function(event){
+  let dropdown_1 = event.target.value;
+  dropdown_2.addEventListener("change", function(event){
+  let dropdown_2 = event.target.value;
+  if (dropdown_1 == dropdown_2) {
+  alert("Please select two different teams.");
+  event.target.value = event.target.firstElementChild.value; 
+                                              }
+                                                     })});
+
 //Define references
 const teams = {
-  'Arsenal': {points: 0, wins: 0, draws: 0, losses: 0, GD: 0},
-  'Chelsea': {points: 0, wins: 0, draws: 0, losses: 0, GD: 0},
-  'Crystal Palace': {points: 0, wins: 0, draws: 0, losses: 0, GD: 0},
-  'Everton': {points: 0, wins: 0, draws: 0, losses: 0, GD: 0},
-  'Manchester City': {points: 0, wins: 0, draws: 0, losses: 0, GD: 0},
-  'Manchester United': {points: 0, wins: 0, draws: 0, losses: 0, GD: 0},
-  'Tottenham Hotspur': {points: 0, wins: 0, draws: 0, losses: 0, GD: 0},
-  'West Ham United': {points: 0, wins: 0, draws: 0, losses: 0, GD: 0}
+  'Arsenal': {points: 0, wins: 0, draws: 0, losses: 0},
+  'Chelsea': {points: 0, wins: 0, draws: 0, losses: 0},
+  'Crystal Palace': {points: 0, wins: 0, draws: 0, losses: 0},
+  'Everton': {points: 0, wins: 0, draws: 0, losses: 0},
+  'Manchester City': {points: 0, wins: 0, draws: 0, losses: 0},
+  'Manchester United': {points: 0, wins: 0, draws: 0, losses: 0},
+  'Tottenham Hotspur': {points: 0, wins: 0, draws: 0, losses: 0},
+  'West Ham United': {points: 0, wins: 0, draws: 0, losses: 0}
 };
 
 //Trigger both functions using event listener
